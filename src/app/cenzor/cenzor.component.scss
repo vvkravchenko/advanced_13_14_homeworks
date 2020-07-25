@@ -1,0 +1,97 @@
+
+body{
+    .invalid{
+        border-color: red;
+    }
+    .header{
+        height: 100px;
+        background-color: PaleTurquoise;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .main{
+        height: calc(100vh - 100px);
+        width: 100%;
+        background-color: LightCyan;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        .workplace{
+            padding: 10px;
+            height: 50%;
+            width: 50%;
+            background-color: PaleTurquoise;
+            border-radius: 5px;
+            display: flex;
+            flex-direction: column;
+            .badWords{
+                font-size: 18px;
+                font-weight: 600;
+                height: 20%;
+                display: flex;
+                align-items: center;
+                .badcolor{
+                    color: red;
+                }
+            }
+            form{
+                height: 80%;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                .menu{
+                    margin-bottom: 15px;
+                    flex-grow: 1;
+                    height: 50px;
+                    display: flex;
+                    justify-content: space-between;
+                    input[type=text]{
+                        margin-right: 15px;
+                        // border: 1px solid gray;
+                        border-radius: 5px;
+                        padding: 0 15px 0 15px;
+                        outline-color: skyblue;
+                        color: gray; 
+                        font-size: 16px;
+                        flex-grow: 4;
+                    }
+                    input[type=button] {
+                        width: 70px;
+                        border-radius: 5px;
+                    }
+                    input[name=btnAdd]{
+                        background-color: gold;
+                        margin-right: 15px;
+                        flex-grow: 1;
+                    }
+                    input[name=btnReset]{
+                        background-color: Crimson;
+                        flex-grow: 1;
+                    }
+                }
+                .textArea{
+                    margin-bottom: 15px;
+                    flex-grow: 2;
+                    textarea{
+                        // border: 1px solid gray;
+                        outline-color: skyblue;
+                        resize: none;
+                        width: 100%;
+                        height: 100%;
+                        padding: 15px;
+                        color: gray;
+                        font-size: 16px;
+                        border-radius: 5px;
+                    }
+                }
+                input[name=btnCenzor]{
+                    flex-grow: 1;
+                    height: 50px;
+                    background-color: lime;
+                    border-radius: 5px;
+                }
+            }
+        }
+    }
+}

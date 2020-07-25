@@ -1,0 +1,29 @@
+main{
+    header{
+        height: 100px;
+        width: 100%;
+        background-color: CadetBlue;
+        font-size: 28px;
+        font-weight: 600;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .content{
+        display: flex;
+        .editor{
+            // border: 1px solid #000;
+            width: 50%;
+            form{
+                padding: 50px 10px 0 100px;
+            }
+            
+        }
+        .myTable{
+            // border: 1px solid #000;
+            width: 50%;
+            padding: 75px 0 0 10px;
+            
+        }
+    }
+}

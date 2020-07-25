@@ -1,0 +1,23 @@
+<body>
+    <div class="header">
+        <h2>{{headerText}}</h2>
+    </div>
+    <div class="main">
+        <div class="workplace">
+            <div class="badWords">
+                <p>Bad words: &nbsp;</p><p class="badcolor">{{badWords}}</p>
+            </div>
+            <form name="form">
+                <div class="menu">
+                    <input [class.invalid]="classValidation" name="text" type="text" placeholder="word here...">
+                    <input type="button" name="btnAdd" value="Add" (click)="isInValidClass()">
+                    <input type="button" name="btnReset" value="Reset" (click)="clearTextAreaForm()">
+                </div>
+                <div class="textArea">
+                    <textarea  [class.invalid]="cenzorValidation" name="textarea" cols="10" rows="0" placeholder="text here..."></textarea>
+                </div>
+                <input type="button" name="btnCenzor" value="Cenzor" (click)="isInValidCenzor()">
+            </form>
+        </div>
+    </div>
+</body>
